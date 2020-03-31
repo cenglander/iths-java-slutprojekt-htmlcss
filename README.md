@@ -1,3 +1,17 @@
+Projekt i HTML och CSS- Charlotte Englander - 2020-03-31
+
+Webbplats för en restaurang.
+-jag har börjat skissa på främst mobillayouten.
+-härnäst ska jag titta mer på färgpaletter samt bilder/bakgrundsbilder 
+ för att bestämma komma fram till var det ska vara färg/bakgrundsbilder
+-jag tänker att det ska vara en del bakgrundsbilder (t.ex. headern och vid Boka) 
+ för att man ska få en känsla av hur det är att sitta där. både mat och miljö.
+-jag kommer använda mig av grid över hela
+(-blev osäker på vad man skulle skriva här så säg gärna till om jag ska lägga till nåt)
+
+_______________________________________________________________________________________
+
+
 # Slutprojekt i HTML och CSS
 
 ## Instruktioner
