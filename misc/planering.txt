@@ -1,0 +1,10 @@
+2020-04-02
+Jag jobbade igår och har inte gjort några ändringar i koden sedan i tisdags.
+Gjorde mer förarbete igår som t.ex. hur man skriver med sass, färgpaletter och fonter.
+
+Planering:
+-sätta upp grid
+-mer att reset:a? margin, padding
+-färger på allt för att se
+-välja ut och redigera bilder
+-
