@@ -8,3 +8,33 @@ Planering:
 -färger på allt för att se
 -välja ut och redigera bilder
 -
+
+
+test som ej fungerade för grid-lunch-meny:
+.lunches {
+    grid-area: lunches;
+    @extend %body-text;
+    background-color: $dutch-white;
+    
+    h2 {
+        grid-area: lunch-top;
+        display: flex;
+        justify-content: center;
+    }
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: 
+    "lunch-top lunch-top"
+    "weekday dish"
+    "weekday dish"
+    "weekday dish"
+    "weekday dish"
+    "weekday dish";
+
+    h3 {
+        grid-area: weekday;
+    }
+    p {
+        grid-area: dish;
+    }
+}
