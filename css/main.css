@@ -1,2 +1,129 @@
+/*body,
+ul,
+ol,
+p {
+    margin: 0;
+    padding: 0;
+}*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: plum; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #948B89; }
+
+.wrapper {
+  background-color: #B6A39E;
+  max-width: 800px; }
+
+header {
+  padding: 10vw 0 10vw 0;
+  display: flex; }
+  header h1 {
+    padding: 1.5vw;
+    font-size: 2.5rem;
+    justify-content: flex-start; }
+
+footer {
+  background-color: #D0D1AC;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 0vh 5vh 0vh; }
+  footer p {
+    font-size: 0.7rem; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lobster', cursive; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1rem; }
+
+h4 {
+  font-size: 0.8rem; }
+
+p {
+  font-family: 'Cabin', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.next_event, .booking {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .next_event h2, .booking h2 {
+    margin: 10vw; }
+
+.lunches, .current_events {
+  padding: 1rem 0.5rem 1rem 0.5rem; }
+  .lunches h3, .current_events h3 {
+    margin: 2.2vh 0 0 0; }
+  .lunches p, .current_events p {
+    font-size: 0.8rem; }
+
+.next_event {
+  background-color: #D0D1AC; }
+
+.lunches {
+  background-color: #DDE0BD; }
+  .lunches h2 {
+    display: flex;
+    justify-content: center; }
+
+.booking {
+  background-color: #D0D1AC; }
+
+.current_events {
+  background-color: #DDE0BD; }
+
+@media screen and (min-width: 320px) {
+  body {
+    background-color: #f0f; }
+  header {
+    background-color: #f0f; } }

@@ -2,11 +2,113 @@
 
 $dutch-white: #DDE0BD;
 $dark-vanilla: #D0D1AC;
-$light-purple: #B6A39E;
+$brown-gray: #B6A39E;
 $taupe-gray: #948B89;
 $nickel: #726E75;
 
 
 body {
-    background-color: #eee;
+    background-color: $taupe-gray;
+}
+.wrapper {
+    background-color: $brown-gray;
+    max-width: 800px;
+}
+
+header {
+    padding: 10vw 0 10vw 0;
+    display: flex;
+    h1 {
+        padding: 1.5vw;
+        font-size: 2.5rem;
+        justify-content: flex-start;
+    }
+}
+main {
+
+}
+
+footer {
+    background-color: $dark-vanilla;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0vh 5vh 0vh;
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1rem;
+}
+h4 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-family: 'Cabin', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+}
+
+%white-space-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin: 10vw;
+    }
+}
+
+%body-text {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    h3 {
+        margin: 2.2vh 0 0 0;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.next_event {
+    @extend %white-space-heading;
+    background-color: $dark-vanilla;
+}
+
+.lunches {
+    @extend %body-text;
+    background-color: $dutch-white;
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+.booking {
+    @extend %white-space-heading;
+    background-color: $dark-vanilla;
+}
+
+.current_events {
+    @extend %body-text;
+    background-color: $dutch-white;
+
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background-color: #f0f;
+    }
+    header {
+        background-color: #f0f;
+    }
 }
