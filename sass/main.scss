@@ -13,10 +13,11 @@ body {
 .grid-container {
     background-color: $brown-gray;
     max-width: 800px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    "top top top top top top"
+    "top top top top nav nav"
     "next-event next-event next-event next-event next-event next-event "
     "lunches lunches lunches lunches lunches lunches"
     "booking booking booking booking booking booking"
@@ -31,8 +32,36 @@ header {
     display: flex;
     h1 {
         padding: 1.5vw;
-        font-size: 2.5rem;
+        font-size: 2rem;
         justify-content: flex-start;
+    }
+}
+
+nav {
+    grid-area: nav;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        padding: 1rem 1rem 0 0;
+    }
+    div.menu {
+        /*position: relative;*/
+
+    }
+    div.menu-content {
+        display: none;
+        /*position: absolute;*/
+        border: solid 0.5px $nickel;
+        border-radius: 2px;
+        box-shadow: 2px 2px 2px $nickel;
+        
+    }
+    div.menu:hover .menu-content {
+        /*display: block;*/
+        display: block;
+        position: absolute;
+        background-color: $brown-gray;
     }
 }
 main {
@@ -144,9 +173,9 @@ a {
 
 @media screen and (min-width: 321px) {
     body {
-        background-color: #f0f;
+        background-color: $brown-gray;
     }
     header {
-        background-color: #f0f;
+        background-color: $brown-gray;
     }
 }

@@ -58,9 +58,10 @@ body {
 .grid-container {
   background-color: #B6A39E;
   max-width: 800px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "top top top top top top" "next-event next-event next-event next-event next-event next-event " "lunches lunches lunches lunches lunches lunches" "booking booking booking booking booking booking" "current-events current-events current-events current-events current-events current-events" "main main main main main main" "footer footer footer footer footer footer"; }
+  grid-template-areas: "top top top top nav nav" "next-event next-event next-event next-event next-event next-event " "lunches lunches lunches lunches lunches lunches" "booking booking booking booking booking booking" "current-events current-events current-events current-events current-events current-events" "main main main main main main" "footer footer footer footer footer footer"; }
 
 header {
   grid-area: top;
@@ -68,8 +69,29 @@ header {
   display: flex; }
   header h1 {
     padding: 1.5vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     justify-content: flex-start; }
+
+nav {
+  grid-area: nav;
+  font-family: 'Cabin', sans-serif;
+  display: flex;
+  justify-content: flex-end; }
+  nav img {
+    padding: 1rem 1rem 0 0; }
+  nav div.menu {
+    /*position: relative;*/ }
+  nav div.menu-content {
+    display: none;
+    /*position: absolute;*/
+    border: solid 0.5px #726E75;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #726E75; }
+  nav div.menu:hover .menu-content {
+    /*display: block;*/
+    display: block;
+    position: absolute;
+    background-color: #B6A39E; }
 
 main {
   grid-area: main; }
@@ -149,6 +171,6 @@ a {
 
 @media screen and (min-width: 321px) {
   body {
-    background-color: #f0f; }
+    background-color: #B6A39E; }
   header {
-    background-color: #f0f; } }
+    background-color: #B6A39E; } }
