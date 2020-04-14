@@ -125,7 +125,8 @@ a {
 
 .next-event {
   grid-area: next-event;
-  background-color: #D0D1AC; }
+  background-image: url("../img/bg-wine.jpg");
+  background-size: cover; }
 
 .lunches {
   grid-area: lunches;
@@ -137,7 +138,16 @@ a {
 
 .booking {
   grid-area: booking;
-  background-color: #D0D1AC; }
+  background-image: url("../img/bg-plate.jpg");
+  background-size: cover;
+  /*h2 {
+        padding: 5vw;
+        border: 0.5px solid;
+    }*/ }
+  .booking a h2:hover {
+    color: #726E75;
+    transform: skewX(10deg);
+    transition: ease 0.2s; }
 
 .current-events {
   grid-area: current-events;
@@ -159,7 +169,9 @@ a {
   justify-content: center;
   align-items: center; }
   .next-event h2, .booking h2 {
-    margin: 10vw; }
+    margin: 10vw;
+    padding: 5vw;
+    border: 0.5px solid #B6A39E; }
 
 .lunches, .current-events {
   padding: 1rem 0.5rem 1rem 0.5rem; }

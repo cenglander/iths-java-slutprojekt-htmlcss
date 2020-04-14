@@ -6,7 +6,6 @@ $brown-gray: #B6A39E;
 $taupe-gray: #948B89;
 $nickel: #726E75;
 
-
 body {
     background-color: $taupe-gray;
 }
@@ -105,7 +104,9 @@ a {
 .next-event {
     grid-area: next-event;
     @extend %white-space-heading;
-    background-color: $dark-vanilla;
+    //background-color: $dark-vanilla;
+    background-image: url("../img/bg-wine.jpg");
+    background-size: cover;
 }
 
 .lunches {
@@ -119,13 +120,24 @@ a {
     p {
         grid-column: 3/7;
     }
-
 }
 
 .booking {
     grid-area: booking;
     @extend %white-space-heading;
-    background-color: $dark-vanilla;
+    background-image: url("../img/bg-plate.jpg");
+    background-size: cover;
+    //background-color: $dark-vanilla;
+    a h2:hover {
+        color: $nickel;
+        transform: skewX(10deg);
+        transition: ease 0.2s;
+        //filter: opacity(90%);
+    }
+    /*h2 {
+        padding: 5vw;
+        border: 0.5px solid;
+    }*/
 }
 
 .current-events {
@@ -157,6 +169,8 @@ a {
     align-items: center;
     h2 {
         margin: 10vw;
+        padding: 5vw;
+        border: 0.5px solid $brown-gray;
     }
 }
 
