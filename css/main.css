@@ -55,13 +55,21 @@ table {
 body {
   background-color: #948B89; }
 
-.grid-container {
+.grid-container-start {
   background-color: #B6A39E;
   max-width: 800px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "top top top top nav nav" "next-event next-event next-event next-event next-event next-event " "lunches lunches lunches lunches lunches lunches" "booking booking booking booking booking booking" "current-events current-events current-events current-events current-events current-events" "main main main main main main" "footer footer footer footer footer footer"; }
+
+.grid-container-menu {
+  background-color: #B6A39E;
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "top top top top nav nav" "main main main main main main" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer"; }
 
 header {
   grid-area: top;
@@ -86,7 +94,7 @@ nav {
     /*position: absolute;*/
     border: solid 0.5px #726E75;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px #726E75; }
+    box-shadow: 1px 1px 1px #726E75; }
   nav div.menu:hover .menu-content {
     /*display: block;*/
     display: block;
@@ -94,7 +102,17 @@ nav {
     background-color: #B6A39E; }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  background-color: #DDE0BD; }
+
+aside {
+  grid-area: sidebar;
+  background-color: #DDE0BD; }
+
+main article.menu, aside article.menu {
+  background-color: #D0D1AC;
+  margin: 0.5rem;
+  border-radius: 3px; }
 
 footer {
   grid-area: footer;
@@ -139,15 +157,10 @@ a {
 .booking {
   grid-area: booking;
   background-image: url("../img/bg-plate.jpg");
-  background-size: cover;
-  /*h2 {
-        padding: 5vw;
-        border: 0.5px solid;
-    }*/ }
+  background-size: cover; }
   .booking a h2:hover {
     color: #726E75;
-    transform: skewX(10deg);
-    transition: ease 0.2s; }
+    transform: scale(1.1); }
 
 .current-events {
   grid-area: current-events;
@@ -173,11 +186,11 @@ a {
     padding: 5vw;
     border: 0.5px solid #B6A39E; }
 
-.lunches, .current-events {
+main article.menu, aside article.menu, .lunches, .current-events {
   padding: 1rem 0.5rem 1rem 0.5rem; }
-  .lunches h3, .current-events h3 {
+  main article.menu h3, aside article.menu h3, .lunches h3, .current-events h3 {
     margin: 2.2vh 0 0 0; }
-  .lunches p, .current-events p {
+  main article.menu p, aside article.menu p, .lunches p, .current-events p {
     font-size: 0.8rem;
     margin: 2.2vh 0 0 0; }
 
@@ -185,4 +198,11 @@ a {
   body {
     background-color: #B6A39E; }
   header {
-    background-color: #B6A39E; } }
+    background-color: #B6A39E; }
+  .grid-container-menu {
+    /*background-color: $brown-gray;
+        max-width: 800px;
+        margin: auto;*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "top top top top nav nav" "main main main sidebar sidebar sidebar" "footer footer footer footer footer footer"; } }
