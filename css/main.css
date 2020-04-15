@@ -69,7 +69,15 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "top top top top nav nav" "main main main main main main" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer"; }
+  grid-template-areas: "top top top top nav nav" "top-menu top-menu top-menu top-menu top-menu top-menu" "main main main main main main" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer"; }
+
+.grid-container-about {
+  background-color: #B6A39E;
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "top top top top nav nav" "top-about top-about top-about top-about top-about top-about" "main main main main main main" "footer footer footer footer footer footer"; }
 
 header {
   grid-area: top;
@@ -84,11 +92,12 @@ nav {
   grid-area: nav;
   font-family: 'Cabin', sans-serif;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  /*div.menu {
+        position: relative;
+    }*/ }
   nav img {
     padding: 1rem 1rem 0 0; }
-  nav div.menu {
-    /*position: relative;*/ }
   nav div.menu-content {
     display: none;
     /*position: absolute;*/
@@ -100,6 +109,16 @@ nav {
     display: block;
     position: absolute;
     background-color: #B6A39E; }
+
+section.top-menu {
+  grid-area: top-menu;
+  background-image: url("../img/bg-menu.jpg");
+  background-size: cover; }
+
+section.top-about {
+  grid-area: top-about;
+  background-image: url("../img/bg-plants.jpg");
+  background-size: cover; }
 
 main {
   grid-area: main;
@@ -160,7 +179,7 @@ a {
   background-size: cover; }
   .booking a h2:hover {
     color: #726E75;
-    transform: scale(1.1); }
+    transform: scale(1.2); }
 
 .current-events {
   grid-area: current-events;
@@ -177,11 +196,11 @@ a {
     grid-column: 1/7;
     margin: auto; }
 
-.next-event, .booking {
+section.top-menu, section.top-about, .next-event, .booking {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .next-event h2, .booking h2 {
+  section.top-menu h2, section.top-about h2, .next-event h2, .booking h2 {
     margin: 10vw;
     padding: 5vw;
     border: 0.5px solid #B6A39E; }
@@ -202,7 +221,7 @@ main article.menu, aside article.menu, .lunches, .current-events {
   .grid-container-menu {
     /*background-color: $brown-gray;
         max-width: 800px;
-        margin: auto;*/
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "top top top top nav nav" "main main main sidebar sidebar sidebar" "footer footer footer footer footer footer"; } }
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);*/
+    grid-template-areas: "top top top top nav nav" "top-menu top-menu top-menu top-menu top-menu top-menu" "main main main sidebar sidebar sidebar" "footer footer footer footer footer footer"; } }

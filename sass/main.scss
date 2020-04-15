@@ -24,6 +24,7 @@ body {
     "main main main main main main"
     "footer footer footer footer footer footer";
 }
+
 .grid-container-menu {
     background-color: $brown-gray;
     max-width: 800px;
@@ -32,8 +33,22 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
     "top top top top nav nav"
+    "top-menu top-menu top-menu top-menu top-menu top-menu"
     "main main main main main main"
     "sidebar sidebar sidebar sidebar sidebar sidebar"
+    "footer footer footer footer footer footer";
+}
+
+.grid-container-about {
+    background-color: $brown-gray;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "top top top top nav nav"
+    "top-about top-about top-about top-about top-about top-about"
+    "main main main main main main"
     "footer footer footer footer footer footer";
 }
 
@@ -56,12 +71,11 @@ nav {
     img {
         padding: 1rem 1rem 0 0;
     }
-    div.menu {
-        /*position: relative;*/
-    }
+    /*div.menu {
+        position: relative;
+    }*/
     div.menu-content {
         display: none;
-        
         /*position: absolute;*/
         border: solid 0.5px $nickel;
         border-radius: 2px;
@@ -75,6 +89,19 @@ nav {
         background-color: $brown-gray;
     }
 }
+section.top-menu {
+    grid-area: top-menu;
+    @extend %white-space-heading;
+    background-image: url("../img/bg-menu.jpg");
+    background-size: cover;
+}
+section.top-about {
+    grid-area: top-about;
+    @extend %white-space-heading;
+    background-image: url("../img/bg-plants.jpg");
+    background-size: cover;
+}
+
 main {
     grid-area: main;
     background-color: $dutch-white;
@@ -152,7 +179,7 @@ a {
     //background-color: $dark-vanilla;
     a h2:hover {
         color: $nickel;
-        transform: scale(1.1);
+        transform: scale(1.2);
         //transition: ease 4;
     }
 }
@@ -213,11 +240,12 @@ a {
     .grid-container-menu {
         /*background-color: $brown-gray;
         max-width: 800px;
-        margin: auto;*/
+        margin: auto;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);*/
         grid-template-areas: 
         "top top top top nav nav"
+        "top-menu top-menu top-menu top-menu top-menu top-menu"
         "main main main sidebar sidebar sidebar"
         "footer footer footer footer footer footer";
     }
