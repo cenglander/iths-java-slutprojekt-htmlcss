@@ -61,7 +61,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "top top top top nav nav" "next-event next-event next-event next-event next-event next-event " "lunches lunches lunches lunches lunches lunches" "booking booking booking booking booking booking" "current-events current-events current-events current-events current-events current-events" "main main main main main main" "footer footer footer footer footer footer"; }
+  grid-template-areas: "top top top top top nav" "next-event next-event next-event next-event next-event next-event " "lunches lunches lunches lunches lunches lunches" "booking booking booking booking booking booking" "current-events current-events current-events current-events current-events current-events" "main main main main main main" "footer footer footer footer footer footer"; }
 
 .grid-container-menu {
   background-color: #B6A39E;
@@ -69,7 +69,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "top top top top nav nav" "top-menu top-menu top-menu top-menu top-menu top-menu" "main main main main main main" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer"; }
+  grid-template-areas: "top top top top top nav" "top-menu top-menu top-menu top-menu top-menu top-menu" "main main main main main main" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer"; }
 
 .grid-container-about {
   background-color: #B6A39E;
@@ -77,7 +77,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "top top top top nav nav" "top-about top-about top-about top-about top-about top-about" "main main main main main main" "footer footer footer footer footer footer"; }
+  grid-template-areas: "top top top top top nav" "top-about top-about top-about top-about top-about top-about" "main main main main main main" "footer footer footer footer footer footer"; }
 
 header {
   grid-area: top;
@@ -92,7 +92,8 @@ nav {
   grid-area: nav;
   font-family: 'Cabin', sans-serif;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  /**/
   /*div.menu {
         position: relative;
     }*/ }
@@ -105,8 +106,8 @@ nav {
     border-radius: 2px;
     box-shadow: 1px 1px 1px #726E75; }
   nav div.menu:hover .menu-content {
-    /*display: block;*/
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     background-color: #B6A39E; }
 
@@ -132,6 +133,13 @@ main article.menu, aside article.menu {
   background-color: #D0D1AC;
   margin: 0.5rem;
   border-radius: 3px; }
+
+section.gallery {
+  grid-area: gallery;
+  background-color: #B6A39E;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; }
 
 footer {
   grid-area: footer;
@@ -205,11 +213,11 @@ section.top-menu, section.top-about, .next-event, .booking {
     padding: 5vw;
     border: 0.5px solid #B6A39E; }
 
-main article.menu, aside article.menu, .lunches, .current-events {
+main article.menu, aside article.menu, main article.about-text, .lunches, .current-events {
   padding: 1rem 0.5rem 1rem 0.5rem; }
-  main article.menu h3, aside article.menu h3, .lunches h3, .current-events h3 {
+  main article.menu h3, aside article.menu h3, main article.about-text h3, .lunches h3, .current-events h3 {
     margin: 2.2vh 0 0 0; }
-  main article.menu p, aside article.menu p, .lunches p, .current-events p {
+  main article.menu p, aside article.menu p, main article.about-text p, .lunches p, .current-events p {
     font-size: 0.8rem;
     margin: 2.2vh 0 0 0; }
 
