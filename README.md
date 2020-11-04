@@ -6,8 +6,8 @@ Webbplats för en restaurang.
  för att bestämma komma fram till var det ska vara färg/bakgrundsbilder
 -jag tänker att det ska vara en del bakgrundsbilder (t.ex. headern och vid Boka) 
  för att man ska få en känsla av hur det är att sitta där. både mat och miljö.
--jag kommer använda mig av grid över hela
-(-blev osäker på vad man skulle skriva här så säg gärna till om jag ska lägga till nåt)
+-jag kommer att använda mig av grid över hela
+
 
 _______________________________________________________________________________________
 
